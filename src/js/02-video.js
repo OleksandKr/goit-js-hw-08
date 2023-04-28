@@ -2,7 +2,6 @@ import Player from '@vimeo/player';
 import throttle from 'lodash.throttle';
 
 
-
 const iframe = document.querySelector('iframe');
 const player = new Player(iframe);
 
@@ -27,6 +26,8 @@ player.setCurrentTime(currentTime).then(function (seconds) {
             break;
     }
 });
+
+
 
 // player.setColor('#45a247').then(function (color) {
 //     // the color that was set
