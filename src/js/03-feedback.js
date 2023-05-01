@@ -7,6 +7,7 @@ const form = document.querySelector('.feedback-form');
 form.addEventListener('input', throttle(onInputData, 500));
 form.addEventListener('submit', onFormSubmit);
 
+recordData();
 let dataForm = {};
 
 function recordData() {
